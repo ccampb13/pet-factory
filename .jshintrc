@@ -21,6 +21,6 @@
   "devel": true,
   "debug": true,
   "validthis": true,
-
+  "esnext": true,
   "globals": {}
 }

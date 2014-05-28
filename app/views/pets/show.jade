@@ -1,0 +1,12 @@
+extends ../shared/template
+
+block content
+
+  .show
+    .pet
+      .name
+        a(href="/pets/#{pet._id}")= pet.name
+      img(src='/img/#{pet.photo}')
+      .species species: #{pet.species}
+      .gender gender: #{pet.gender}
+      .age age: #{pet.age}

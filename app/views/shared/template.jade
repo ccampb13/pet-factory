@@ -4,9 +4,26 @@ html
     meta(charset='utf-8')
     title= title
     link(href='/css/buttons.css', rel='stylesheet')
+    link(href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css" rel="stylesheet")
     link(href='/less/app.css', rel='stylesheet')
-  body
+  body(style='background-image:url(/img/'+bg+');')
+    nav
+      .container
+        .pull-left
+          span
+            a(href='/' class="button button-border-primary button-rounded") Home
+          span
+            a(href='/about' class="button button-border-primary button-rounded") About
+        .pull-right
+          span
+            a(href='/contact' class="button button-border-primary button-rounded") Contact
+          span
+            a(href='/pets/' class="button button-border-primary button-rounded") Pets
+
+
     block content
+
+
 
     script(src='/js/vendor/jquery-2.1.1.js')
     script(src='/js/vendor/lodash-2.4.1.js')
